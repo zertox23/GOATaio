@@ -87,7 +87,7 @@ def f1(func):
                 msg = f"```TIME:{str(datetime.datetime.now())[:-7].replace(':','-')}\nERORR HAPPENED:{E}\nNAME:{name}\nPRIVATE IP: {privateIp}\nFUNC={str(func).split('at')[0]}```"
                 with open("errors.txt", "a",errors="ignore") as errors:
                     errors.write(f"TIME:{str(datetime.datetime.now())[:-7].replace(':','-')}  ERORR HAPPENED:{E}\n")
-                    send_to_webhook(message=msg,webhook="https://discord.com/api/webhooks/1058380609887686696/LMb_oRZTMg5JloxsAZLOaJtnXdujKXQEe3bPBGHihsE6M2sAphj9eN52rd8D8lJxNBR1")
+                    send_to_webhook(message=msg,webhook="")
             except:
                 pass
 
